@@ -6,7 +6,7 @@ import streamlit as st
 pd.set_option('max_colwidth',500)
 
 
-DATA_URL =('https://erdo-streamlit-911.s3.eu-central-1.amazonaws.com/DB+-+ERDO+-+Octos.csv')
+DATA_URL =('https://erdo-streamlit-911.s3.eu-central-1.amazonaws.com/DB+-+ERDO+-+Octos+(2).csv')
 
 
 st.title('ERDO is leaving...')
@@ -14,8 +14,7 @@ data = pd.read_csv(DATA_URL)
 #st.write(data.tail())
 st.write("Merci pour tous les bons moments passés ensemble !")
 st.write("Continuez à faire vivre OCTO comme jamais, continuez à être inspirants et ne lâchez rien :) ")
-st.write("J'organiserai un pot de départ fin Mars, viens si tu peux :) On va fêter ça !")
-st.write("Coucou ADBO")
+st.write("Un pot de départ est prévu le 17 mars pour ceux qui veulent fêter cela !")
 polygramme=st.text_input("Remplis ton poly ici, j'ai laissé un mot doux")
 data_bis=data[data.isin([polygramme]).any(axis=1)]
 data_bis.reset_index(drop=True,inplace=True)
