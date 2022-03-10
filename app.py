@@ -9,7 +9,7 @@ pd.set_option('max_colwidth',500)
 DATA_URL =('https://erdo-streamlit-911.s3.eu-central-1.amazonaws.com/DB+-+ERDO+-+Octos+(2).csv')
 
 
-st.title('ERDO is leaving...')
+st.title('ERDO out...')
 data = pd.read_csv(DATA_URL)
 #st.write(data.tail())
 st.write("Merci pour tous les bons moments passés ensemble !")
