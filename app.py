@@ -6,7 +6,7 @@ import streamlit as st
 pd.set_option('max_colwidth',500)
 
 
-DATA_URL =('https://erdo-streamlit-911.s3.eu-central-1.amazonaws.com/DB+-+ERDO+-+Octos+(5).csv')
+DATA_URL =('https://erdo-streamlit-911.s3.eu-central-1.amazonaws.com/DB+-+ERDO+-+Octos+(6).csv')
 
 
 st.title('ERDO out...')
